@@ -924,6 +924,7 @@ text-transform: uppercase;
     border: transparent;
     background-color: var(--backgroundbody-color);
     cursor: pointer;
+    --color2: var(--backgroundbutton-color);
 }
 
 /* .modal-btn-icon {
