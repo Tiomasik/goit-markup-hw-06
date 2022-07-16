@@ -921,14 +921,52 @@ text-transform: uppercase;
     width: 30px;
     height: 30px;
 
-    border: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--backgroundbody-color);
     cursor: pointer;
     --color2: var(--backgroundbutton-color);
 }
 
-/* .modal-btn-icon {
+.modal-btn-icon {
+    width: 18px;
+    height: 18px;
+    fill:#000000;
+    transition: fill var(--timeanime) var(--functionanime);
+}
+
+/* .modal-btn:hover,
+.modal-btn:focus {
+    border-color: tomato;
+    background-color: violet;
+} */
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: var(--backgroundbutton-color);
+}
+
+/* .iconka {
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.qwe {
+    width: 30px;
+    height: 30px;
+    background-color: red;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 15px;
+    left: 5px;
+    transition: transform var(--timeanime) var(--functionanime) 250ms, 
+                background-color var(--timeanime) var(--functionanime);
+}
+
+.iconka:hover .qwe {
+    transform: translateY(150%);
+    background-color: #2196F3;
 } */
