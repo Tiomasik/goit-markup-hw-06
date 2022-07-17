@@ -909,13 +909,20 @@ text-transform: uppercase;
     transition: transform var(--timeanime) var(--functionanime);
 }
 
+.modal-wind {
+    position: relative;
+    min-width: 528px;
+    min-height: 581px;
+}
+
 .modal-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-left: 490px;
-    margin-top: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
     padding: 0;
 
     width: 30px;
@@ -946,7 +953,85 @@ text-transform: uppercase;
     fill: var(--backgroundbutton-color);
 }
 
-/* .iconka {
+/* Forms */
+.form {
+    width: 528px;
+    height: 581px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.form-submit {
+    margin: 0;
+}
+
+.form-field {
+
+}
+
+.form-dates {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contract {
+    display: flex;
+}
+
+.form-contract-check {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
+
+/* @keyframes trans {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+@keyframes transout {
+    0% {
+        transform: translateY(150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes transBg {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes transoutBg {
+    0% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.iconka {
     padding-top:20px;
     padding-bottom: 20px;
     padding-left: 40px;
@@ -956,17 +1041,24 @@ text-transform: uppercase;
 }
 
 .qwe {
+
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     position: absolute;
     top: 15px;
     left: 5px;
-    transition: transform var(--timeanime) var(--functionanime) 250ms, 
-                background-color var(--timeanime) var(--functionanime);
+
+    animation: transout 1000ms var(--functionanime) forwards,
+                transoutBg 1000ms var(--functionanime) 1000ms forwards; 
 }
 
-.iconka:hover .qwe {
-    transform: translateY(150%);
-    background-color: #2196F3;
+.iconka:hover {
+    cursor: pointer;
+}
+
+.iconka:hover .qwe{
+
+    animation: trans 1000ms var(--functionanime) 1000ms forwards,
+                transBg 1000ms var(--functionanime) forwards;
 } */

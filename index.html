@@ -447,11 +447,51 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="30" height="30">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+        <div class="modal-wind">
+          <button class="modal-btn" data-modal-close>
+            <svg class="modal-btn-icon" width="30" height="30">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <form class="form">
+            <b class="form-submit">Оставьте свои данные, мы вам перезвоним</b>
+            <ul class="form-field nopoint">
+              <li class="form-dates">
+                <label for="name">Имя</label>
+                <input type="text" name="user-name" id="name" />
+              </li>
+              <li class="form-dates">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="user-tel" id="tel" />
+              </li>
+              <li class="form-dates">
+                <label for="mail">Почта</label>
+                <input type="email" name="user-mail" id="mail" />
+              </li>
+            </ul>
+
+            <div>
+              <label class="form-comment" for="comment">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <div class="form-contract">
+              <input type="checkbox" name="" value="contract" id="contract" />
+              <label class="form-contract-check" for="contract">
+                <span>Соглашаюсь с рассылкой и принимаю</span>
+                <a href="./index.html">Условия договора</a>
+              </label>
+            </div>
+
+            <button class="dates-btn" type="submit">Отправить</button>
+          </form>
+        </div>
         <!-- <button type="button" class="iconka">
           <div class="qwe"></div>
           Тисни!
