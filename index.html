@@ -468,25 +468,26 @@
             </svg>
           </button>
           <form class="form">
-            <b class="form-submit">Оставьте свои данные, мы вам перезвоним</b>
+            <p class="form-submit">Оставьте свои данные, мы вам перезвоним</p>
             <ul class="form-field nopoint">
               <li class="form-dates">
-                <label for="name">Имя</label>
-                <input type="text" name="user-name" id="name" />
+                <label class="lable-dates" for="name">Имя</label>
+                <input class="form-input" type="text" name="user-name" id="name" />
               </li>
               <li class="form-dates">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="user-tel" id="tel" />
+                <label class="lable-dates" for="tel">Телефон</label>
+                <input class="form-input" type="tel" name="user-tel" id="tel" />
               </li>
               <li class="form-dates">
-                <label for="mail">Почта</label>
-                <input type="email" name="user-mail" id="mail" />
+                <label class="lable-dates" for="mail">Почта</label>
+                <input class="form-input" type="email" name="user-mail" id="mail" />
               </li>
             </ul>
 
-            <div>
+            <div class="comment">
               <label class="form-comment" for="comment">Комментарий</label>
               <textarea
+                class="textarea"
                 name="comment"
                 id="comment"
                 cols="30"
@@ -499,7 +500,7 @@
               <input type="checkbox" name="" value="contract" id="contract" />
               <label class="form-contract-check" for="contract">
                 <span>Соглашаюсь с рассылкой и принимаю</span>
-                <a href="./index.html">Условия договора</a>
+                <a class="form-contract-link" href="./index.html">Условия договора</a>
               </label>
             </div>
 
