@@ -747,6 +747,79 @@ a {
     background-color: var(--backgroundbutton-color);
 }
 
+.footer-form {
+    width: 570px;
+    height: 86;
+
+    margin-left: auto;
+}
+
+.footer-form-submit {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+.footer-form-mail {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-form-lable {
+    display: block;
+}
+
+.footer-form-input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+
+.footer-form-btn {
+    position: relative;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    
+    letter-spacing: 0.06em;
+
+    color: var(--title-color);
+    background-color: var(--backgroundbutton-color);
+
+    border-radius: 4px;
+
+    cursor: pointer;
+    border: transparent;
+    transition: box-shadow var(--timeanime) var(--functionanime);
+}
+
+.footer-form-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+}
+
 /* Titles */
 .aside-title, 
 .about-title,
