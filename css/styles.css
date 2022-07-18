@@ -4,6 +4,7 @@
     --subtitles-color:#212121;
     --paragraphs-color:#757575;
     --backgroundbutton-color: #2196F3;
+    --backgroundbtnfocus: #188CE8;
     --backgroundhf-color:#2F303A;
     --backgroundbody-color:#FFFFFF;
     --backgroundphoto-color:#F5F4FA;
@@ -342,14 +343,12 @@ a {
     letter-spacing: 0.06em;
 
     transition: background-color var(--timeanime) var(--functionanime), 
-                color var(--timeanime) var(--functionanime), 
                 box-shadow var(--timeanime) var(--functionanime);
 }
 
 .herro-btn:hover, 
 .herro-btn:focus {
-    background-color: var(--backgroundphoto-color);
-    color: var(--subtitles-color);
+    background-color: var(--backgroundbtnfocus);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -782,6 +781,12 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -807,11 +812,14 @@ a {
 
     cursor: pointer;
     border: transparent;
-    transition: box-shadow var(--timeanime) var(--functionanime);
+    transition: box-shadow var(--timeanime) var(--functionanime),
+                background-colo var(--timeanime), var(--functionanime);
 }
 
-.footer-form-btn:hover {
+.footer-form-btn:hover,
+.footer-form-btn:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--backgroundbtnfocus);
 }
 
 .send {
@@ -1061,6 +1069,33 @@ text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
+}
+
+.dates-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px;
+
+    background-color: var(--backgroundbutton-color);
+    color: var(--title-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+
+    cursor: pointer;
+    border: transparent;
+    transition: box-shadow var(--timeanime) var(--functionanime),
+        background-colo var(--timeanime), var(--functionanime);
+}
+
+.dates-btn:hover,
+.dates-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--backgroundbtnfocus);
 }
 
 /* @keyframes trans {
