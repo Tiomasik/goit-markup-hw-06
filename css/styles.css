@@ -318,7 +318,9 @@ a {
 } 
 
 .herro-btn,
-.btn-filter-button {
+.btn-filter-button,
+.footer-form-btn,
+.dates-btn {
     cursor: pointer;
     font-family: inherit;
     
@@ -789,7 +791,14 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
 
 .footer-form-btn {
     position: relative;
@@ -808,10 +817,6 @@ a {
     color: var(--title-color);
     background-color: var(--backgroundbutton-color);
 
-    border-radius: 4px;
-
-    cursor: pointer;
-    border: transparent;
     transition: box-shadow var(--timeanime) var(--functionanime),
                 background-colo var(--timeanime), var(--functionanime);
 }
@@ -1057,13 +1062,42 @@ text-transform: uppercase;
 }
 
 .form-dates {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
 }
 
+.form-name {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-dates-icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    fill: var(--subtitles-color);
+}
+
+.lable-dates:hover .form-dates-icon {
+    fill: var(--backgroundbutton-color);
+}
+
+.form-input:focus + .form-dates-icon {
+    fill: var(--backgroundbutton-color);
+}
+
+
+.lable-dates {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
 .lable-dates,
 .form-comment {
+    margin-bottom: 4px;
+
     font-weight: 400;
     font-size: 12px;
     line-height: calc(14 / 12);
@@ -1073,10 +1107,37 @@ text-transform: uppercase;
 }
 
 .form-input {
+    padding-left: 42px;
+
     width: 100%;
     height: 40px;
+
+    font-size: 16px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
+}
+
+.form-input:focus,
+.form-input:hover {
+    border-color: var(--backgroundbutton-color);
+    cursor: pointer;
+}
+
+.textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.textarea:focus,
+.textarea:hover {
+    border-color: var(--backgroundbutton-color);
+    cursor: pointer;
 }
 
 .comment {
@@ -1091,6 +1152,7 @@ text-transform: uppercase;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
 }
 
 .form-comment {
@@ -1110,6 +1172,10 @@ text-transform: uppercase;
     line-height: calc(24 / 14);
 }
 
+.form-contract-span {
+    margin-left: 36px;
+}
+
 .form-contract-link {
     margin-left: 5px;
     
@@ -1125,18 +1191,15 @@ text-transform: uppercase;
     margin: 0 auto;
     padding: 10px 55px;
 
+
     background-color: var(--backgroundbutton-color);
     color: var(--title-color);
 
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-
     letter-spacing: 0.06em;
-    border-radius: 4px;
 
-    cursor: pointer;
-    border: transparent;
     transition: box-shadow var(--timeanime) var(--functionanime),
         background-colo var(--timeanime), var(--functionanime);
 }
