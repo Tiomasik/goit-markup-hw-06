@@ -1149,7 +1149,7 @@ text-transform: uppercase;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    margin-bottom: 20px;
+
     transition: border-color var(--timeanime) var(--functionanime);
 }
 
@@ -1157,6 +1157,10 @@ text-transform: uppercase;
 .textarea:hover {
     border-color: var(--backgroundbutton-color);
     cursor: pointer;
+}
+
+.comment {
+    margin-bottom: 20px;
 }
 
 .form-comment {
@@ -1200,11 +1204,10 @@ text-transform: uppercase;
 .checkbox:checked + .checkbox-icon {
     background-color: var(--backgroundbutton-color);
     background-image: url(../images/check.svg);
-    border-color: var(--backgroundbutton-color);
-    
     background-size: contain;
+    background-repeat: no-repeat;
 
-    /* background-origin: border-box; */
+    border-color: var(--backgroundbutton-color);
 }
 
 .form-contract-span {
